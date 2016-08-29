@@ -7,9 +7,13 @@
 */
 namespace mesartc;
 class mesartc {
-	$repo['version']='v1.0.0-beta';
+	// $config->$this['repo'];
+	$repo['version'] = 'v1.0.0-beta';
+	$repo['name'] = 'mesartc';
+	$repo['author'] = 'protldnetwork';
+	
 	public function info() {
-		echo 'version:'.$repo['version'];
+		echo "{version:$repo['version']}{author:$repo['author']}";
 	}
 }
 ?>
